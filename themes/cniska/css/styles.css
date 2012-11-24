@@ -44,10 +44,25 @@ a[class*=" icon-"] {
 
 .view-id-projects.view-display-id-page_1 .item-list > ul > li {
 	margin: 0;
+	overflow: hidden;
 }
 
+ .view-id-projects.view-display-id-page_1 .item-list > ul > li > a {
+	 float: left;
+ }
+
 .view-id-projects.view-display-id-page_1 .views-field-field-tags {
+	float: left;
+}
+
+ .view-id-projects.view-display-id-page_1 .views-field-field-tags .item-list > ul {
+	 margin: 0;
+ }
+
+.view-id-projects.view-display-id-page_1 .views-field-field-tags .item-list > ul > li {
 	color: #AAA;
+	display: inline-block;
+	margin: 0 0 0 5px;
 }
 
 #block-menu-menu-follow > h2 {
@@ -61,7 +76,6 @@ a[class*=" icon-"] {
 #block-menu-menu-follow > .content > ul > li {
 	padding: 0;
 }
-
 
 #page {
 	padding: 40px 0;
