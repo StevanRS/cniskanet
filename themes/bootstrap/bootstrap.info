@@ -1,0 +1,9 @@
+name = Bootstrap
+description = Base for themes powered by Twitter Bootstrap
+package = Core
+version = VERSION
+core = 8.x
+
+stylesheets[all][] = css/bootstrap.min.css
+
+scripts[] = js/bootstrap.min.js

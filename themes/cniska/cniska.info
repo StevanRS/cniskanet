@@ -1,0 +1,8 @@
+name = Cniska.net
+description = Default theme for cniska.net
+package = Core
+version = VERSION
+core = 8.x
+base theme = bootstrap
+
+stylesheets[all][] = css/styles.css
