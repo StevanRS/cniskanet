@@ -637,12 +637,14 @@ function drupal_environment_initialize() {
   // sites/default/default.settings.php contains more runtime settings.
   // The .htaccess file contains settings that cannot be changed at runtime.
 
+  /*
   // Deny execution with enabled "magic quotes" (both GPC and runtime).
   if (get_magic_quotes_gpc() || get_magic_quotes_runtime()) {
     header($_SERVER['SERVER_PROTOCOL'] . ' 500 Internal Server Error');
     print "PHP's 'magic_quotes_gpc' and 'magic_quotes_runtime' settings are not supported and must be disabled.";
     exit;
   }
+  */
 
   // Use session cookies, not transparent sessions that puts the session id in
   // the query string.
