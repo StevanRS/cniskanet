@@ -5,4 +5,4 @@ version = VERSION
 core = 8.x
 base theme = bootstrap
 
-stylesheets[all][] = css/styles.css
+stylesheets[all][] = less/styles.less

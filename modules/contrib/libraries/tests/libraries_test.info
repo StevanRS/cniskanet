@@ -1,0 +1,5 @@
+name = Libraries test module
+description = Tests library detection and loading.
+core = 8.x
+dependencies[] = libraries
+hidden = TRUE

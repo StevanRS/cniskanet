@@ -1,0 +1,15 @@
+<?php
+
+/**
+ * @file
+ * Install, uninstall, and update functions for libraries.module.
+ */
+
+/**
+ * Implements hook_schema().
+ */
+function libraries_schema() {
+  $schema['cache_libraries'] = drupal_get_schema_unprocessed('system', 'cache');
+  $schema['cache_libraries']['description'] = 'Cache table to store library information.';
+  return $schema;
+}

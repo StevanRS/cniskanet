@@ -1,0 +1,31 @@
+<?php
+
+/**
+ * @file
+ * LESS integration for Drupal.
+ */
+
+/**
+ * Implements HOOK_init()
+ */
+function lesscss_init() {
+  drupal_add_js(libraries_get_path('less') . '/less.min.js');
+  _lesscss_add_less_links();
+}
+
+/**
+ * Adds links tags for LESS files.
+ */
+function _lesscss_add_less_links() {
+  $link_str = '';
+
+  $css = drupal_add_css();
+  foreach ($css as $src => $data) {
+    if (strpos($src, '.less') !== FALSE) {
+      $link_str .= '<link href="' . base_path() . $src . '" rel="stylesheet/less" type="text/css" />';
+      unset($css[$src]); // prevent the default rendering of LESS files into <style>
+    }
+  }
+
+  drupal_add_html_head(array('#type' => 'markup', '#markup' => $link_str), 'less-links');
+}

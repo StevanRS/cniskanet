@@ -1,0 +1,93 @@
+@import "bootstrap.less";
+
+body {
+  font-family: Calibri, Arial, sans;
+}
+
+a {
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+a[class^="icon-"],
+a[class*=" icon-"] {
+  background-image: none;
+  height: auto;
+  width: auto;
+}
+
+#header {
+  margin-bottom: 20px;
+}
+
+#site-name {
+  font-size: 4em;
+  line-height: 100%;
+
+  a {
+    color: #222;
+  }
+}
+
+#site-slogan {
+  color: #AAA;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.view-id-projects.view-display-id-page_front {
+  h2 {
+    font-size: 1.5em;
+  }
+
+  .item-list > ul {
+    list-style: none;
+    margin: 0 0 20px;
+
+    > li {
+      margin: 0;
+      overflow: hidden;
+
+      > a {
+        float: left;
+      }
+    }
+  }
+
+  .views-field-field-tags {
+    float: left;
+  }
+
+  .views-field-field-tags .item-list > ul {
+    margin: 0;
+
+    > li {
+      color: #AAA;
+      display: inline-block;
+      margin: 0 0 0 5px;
+    }
+  }
+}
+
+#block-menu-menu-follow {
+  > h2 {
+    font-size: 1.5em;
+  }
+
+  > .content > ul {
+    margin: 0 0 20px;
+
+    > li {
+      padding: 0;
+    }
+  }
+}
+
+#page {
+  padding: 40px 0;
+}
+
+.front .container {
+  width: 320px;
+}
